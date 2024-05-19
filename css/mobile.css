@@ -54,14 +54,14 @@
 
     .container-option{
         position: absolute;
-        top: 210px;
-        left: 25px;
+        top: 240px;
+        left: 30px;
         font-size: 17px;
     }
 
     #resultado p{
         text-align: justify;
         margin-top: 25;
-        font-size: 14px;
+        font-size: 16px;
     }
 }
