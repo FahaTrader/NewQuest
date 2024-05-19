@@ -29,9 +29,9 @@
     #question-container p{
         position: absolute;
         top: 120px;
-        left: 20px;
+        left: 40px;
         font-size: 17px;
-        max-width: 350px;
+        max-width: 310px;
     }
 
     .btn-cont{
