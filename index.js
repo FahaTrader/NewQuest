@@ -82,6 +82,7 @@ const gruposPerguntas = [
 
 let currentGroupIndex = 0;
 let currentQuestionIndex = 0;
+let totalQuestions = gruposPerguntas.reduce((total, grupo) => total + grupo.perguntas.length, 0);
 let resultados = [];
 let respostasSim = 0;
 let respostasNao = 0;
@@ -91,8 +92,10 @@ const groupNome = document.getElementById('group-nome');
 const question = document.getElementById('question');
 const answerForm = document.getElementById('answer-form');
 const resultadoElement = document.getElementById('resultado');
-const enviarResultado = document.getElementById('salvarResposta');
+const progressBar = document.getElementById('progress-bar');
+const progressPercentage = document.getElementById('progress-percentage');
 const entrarQuest = document.getElementById('btnQuest');
+const enviarResultado = document.getElementById('salvarResposta');
 const divResultado = document.getElementById('resultado');
 
 function shuffleArray(array) {
@@ -118,6 +121,14 @@ function exibirPergunta() {
     answerForm.classList.remove('hidden');
 }
 
+function atualizarBarraProgresso() {
+    const perguntasRespondidas = currentQuestionIndex * gruposPerguntas.length + currentGroupIndex + 1;
+    const porcentagem = (perguntasRespondidas / totalQuestions) * 100;
+    progressBar.style.width = `${porcentagem}%`;
+    progressPercentage.textContent = `${Math.round(porcentagem)}%`;
+
+}
+
 function calcularRespostas() {
     // Coleta a resposta selecionada pelo usuário
     const resposta = document.querySelector('input[name="answer"]:checked').value;
@@ -130,6 +141,9 @@ function calcularRespostas() {
     }
     
     resultados[currentGroupIndex][resposta]++;
+
+    // Atualiza a barra de progresso
+    atualizarBarraProgresso();
 
     // Passa para a próxima pergunta ou grupo
     currentGroupIndex++;
@@ -144,7 +158,6 @@ function calcularRespostas() {
         $("#resultado").removeClass('hidden');
         $("#salvarResposta").removeClass('hidden');
         mostrarResultado();
-        
     } else {
         exibirPergunta();
     }
@@ -154,11 +167,9 @@ function mostrarResultado() {
     resultadoElement.innerHTML = '';
 
     // Exibe o resultado principal (problema paterno ou materno)
-    let mensagemPrincipal = respostasSim > respostasNao ? 'Sua relação com a sua mãe ficou registrada de forma privilegiada no seu inconsciente e define como as suas emoções se organizam. Se você presenciou cenas traumáticas envolvendo sua mãe, saiba que essa provavelmente é a raiz do problema que te trouxe até aqui e te tornou hiper sensível às coisas (ainda que pareça uma pessoa forte).' 
-        : 
-        'Sua relação com o seu pai é o núcleo dos seus conflitos. Você é perfeccionista e tende a se envolver com varias coisas ao mesmo tempo, pensando demais e alimentando um ciclo de ansiedade. Problemas com relacionamentos amorosos também são uma tendência, assim como dificuldades em lidar com dinheiro e com figuras de autoridade.';
+    let mensagemPrincipal = respostasSim > respostasNao ? 'Problema paterno' : 'Problema materno';
     resultadoElement.innerHTML += `<h1>Resultado</h1>`;
-    resultadoElement.innerHTML += `<p>- ${mensagemPrincipal}</p>`;
+    resultadoElement.innerHTML += `<p>Resultado principal: ${mensagemPrincipal}</p>`;
 }
 
 function salvarResultadosNaPlanilha() {
@@ -176,6 +187,7 @@ function salvarResultadosNaPlanilha() {
         "NOME": nome,
         "WHATSAPP": whatsapp,
         "NASCIMENTO": nascimento,
+        "Resultado Principal": respostasSim > respostasNao ? 'Problema paterno' : 'Problema materno'
     };
     gruposPerguntas.forEach((grupo, index) => {
         data[grupo.title] = `Sim: ${resultados[index].sim}, Não: ${resultados[index].nao}`;
