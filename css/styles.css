@@ -32,7 +32,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
+    background-color: #FFF;
     border-image: fill 0, linear-gradient(#FFF, #000);
     border-radius: 20px;
 }
