@@ -4,10 +4,7 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(/assets/5ccf5a26cf67e46060eaf016ebc92969.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #dfd1d1;
 }
 
 .container-fluid{
@@ -36,9 +33,8 @@ h1{
     justify-content: center;
     align-items: center;
     background-color: transparent;
-    border: solid 2px rgba(255, 255, 255, 0,5);
+    border-image: fill 0, linear-gradient(#FFF, #000);
     border-radius: 20px;
-    backdrop-filter: blur(55px);
 }
 
 .form-group{
