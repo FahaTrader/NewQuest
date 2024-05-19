@@ -31,7 +31,7 @@
         top: 90px;
         left: 20px;
         font-size: 17px;
-        max-width: 400px;
+        max-width: 350px;
     }
 
     .btn-cont{
@@ -54,14 +54,14 @@
 
     .container-option{
         position: absolute;
-        top: 190px;
+        top: 210px;
         left: 25px;
         font-size: 17px;
     }
 
     #resultado p{
         text-align: justify;
-        margin-top: 0;
+        margin-top: 25;
         font-size: 14px;
     }
 }
