@@ -167,7 +167,9 @@ function mostrarResultado() {
     resultadoElement.innerHTML = '';
 
     // Exibe o resultado principal (problema paterno ou materno)
-    let mensagemPrincipal = respostasSim > respostasNao ? 'Problema paterno' : 'Problema materno';
+    let mensagemPrincipal = respostasSim > respostasNao ? 'Sua relação com a sua mãe ficou registrada de forma privilegiada no seu inconsciente e define como as suas emoções se organizam. Se você presenciou cenas traumáticas envolvendo sua mãe, saiba que essa provavelmente é a raiz do problema que te trouxe até aqui e te tornou hiper sensível às coisas (ainda que pareça uma pessoa forte).' 
+        : 
+        'Sua relação com o seu pai é o núcleo dos seus conflitos. Você é perfeccionista e tende a se envolver com varias coisas ao mesmo tempo, pensando demais e alimentando um ciclo de ansiedade. Problemas com relacionamentos amorosos também são uma tendência, assim como dificuldades em lidar com dinheiro e com figuras de autoridade.';
     resultadoElement.innerHTML += `<h1>Resultado</h1>`;
     resultadoElement.innerHTML += `<p>Resultado principal: ${mensagemPrincipal}</p>`;
 }
