@@ -222,7 +222,7 @@ function mostrarResultado() {
         : 
         'Sua relação com o seu pai é o núcleo dos seus conflitos. Você é perfeccionista e tende a se envolver com varias coisas ao mesmo tempo, pensando demais e alimentando um ciclo de ansiedade. Problemas com relacionamentos amorosos também são uma tendência, assim como dificuldades em lidar com dinheiro e com figuras de autoridade.';
     resultadoElement.innerHTML += `<h1>Resultado</h1>`;
-    resultadoElement.innerHTML += `<p>Resultado principal: ${mensagemPrincipal}</p>`;
+    resultadoElement.innerHTML += `<p>- ${mensagemPrincipal}</p>`;
 }
 
 function salvarResultadosNaPlanilha() {
@@ -288,7 +288,7 @@ enviarResultado.addEventListener('click', function(){
         const mensagensFormatadas = mensagens.map(mensagem => encodeURIComponent(mensagem)).join('%0A%0A');
 
         // Criar o link para abrir o WhatsApp Web com as mensagens preenchidas
-        const linkWhatsApp = `https://wa.me/${numeroDestino}?text=Ol%C3%A1+Dra.+%2AAqui+est%C3%A1+o+meu+Resultado%3A%2A${mensagensFormatadas}`;
+        const linkWhatsApp = `https://api.whatsapp.com/send?phone=5521982565890&text=Ol%C3%A1%20Dra.%20Rayanne!!%0AAcabei%20de%20finalizar%20o%20question%C3%A1rio.`;
     
         // Abrir o link em uma nova aba
         window.open(linkWhatsApp);
