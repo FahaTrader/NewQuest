@@ -70,7 +70,7 @@ input:valid ~ label {
     outline: none;
     font-size: 1rem;
     padding: 0 35px 0 5px;
-    color: #999;
+    color: #FFF;
 }
 
 .form-group input:hover{
