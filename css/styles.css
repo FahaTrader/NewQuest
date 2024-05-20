@@ -34,7 +34,7 @@ h1{
     align-items: center;
     background: linear-gradient(#dfd1d1, #714da6);
     border-radius: 20px;
-    border: none;
+    border: solid 0.5px white;
 }
 
 .form-group{
