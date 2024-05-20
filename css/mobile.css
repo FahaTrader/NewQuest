@@ -4,13 +4,13 @@
     }
 
     .card{
-        width: 95%;
+        width: 90%;
         display: block;
         height: 48vh;
     }
 
     form{
-        width: 100%;
+        width: 96%;
     }
 
     .container-form{
@@ -35,6 +35,7 @@
     }
 
     .cssbuttons-io-button{
+        width: 95%;
         position: relative;
         top: 1.3em;
         height: 2.4em;
