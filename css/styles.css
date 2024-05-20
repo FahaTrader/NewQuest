@@ -169,13 +169,13 @@ input:valid ~ label {
 .btn-content {
     display: flex;
     align-items: center;
-    padding: 5px 30px;
+    padding: 0px 30px;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 26px;
     color: var(--color-text);
-    background: var(--color-background);
+    background: transparent;
     transition: 1s;
     border: none;
     border-radius: 100px;
@@ -188,7 +188,7 @@ input:valid ~ label {
     animation: btn-content 1s;
     outline: 0.1em solid transparent;
     outline-offset: 0.2em;
-    box-shadow: 0 0 0.4em 0 var(--color-background);
+    box-shadow: 0 0 0.4em 0 var(--color-outline);
     color: #FFF;
 }
   
