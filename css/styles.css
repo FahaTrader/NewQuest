@@ -223,7 +223,7 @@ input:valid ~ label {
 
 #question-container p{
     position: absolute;
-    top: 160px;
+    top: 125px;
     left: 35px;
     font-size: 20px;
     max-width: 400px;
