@@ -4,7 +4,7 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #7b52b9;
+    background-color: #dfd1d1;
 }
 
 .container-fluid{
@@ -32,7 +32,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFF;
+    background-color: #714da6;
     border-image: fill 0, linear-gradient(#0001, #000);
     border-radius: 20px;
 }
