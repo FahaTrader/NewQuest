@@ -148,7 +148,7 @@ input:valid ~ label {
 .btn-perg{
     position: absolute;
     top: 335px;
-    left: 32px;
+    left: 130px;
 }
 
 .btn-save{
@@ -161,7 +161,7 @@ input:valid ~ label {
     display: flex;
     justify-content: center;
     --color-text: #ffffff;
-    --color-background: #ff135a;
+    --color-background: #008080;
     --color-outline: #ff145b80;
     --color-shadow: #00000080;
 }
