@@ -146,7 +146,7 @@ input:valid ~ label {
 
 .btn-perg{
     position: absolute;
-    top: 400px;
+    top: 370px;
     left: 32px;
 }
 
@@ -224,6 +224,7 @@ input:valid ~ label {
 #question-container p{
     position: absolute;
     top: 160px;
+    left: 35px;
     font-size: 20px;
     max-width: 400px;
     color: #FFF:
@@ -231,7 +232,7 @@ input:valid ~ label {
 
 .container-option{
     position: absolute;
-    top: 320px;
+    top: 290px;
     left: 32px;
     font-size: 20px;
 }
@@ -245,7 +246,7 @@ input:valid ~ label {
     width: 100%;
     margin-bottom: 10px;
     position: relative;
-    margin-top: 25px;
+    margin-top: 20px;
 }
 
 #progress-bar {
