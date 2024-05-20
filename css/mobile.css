@@ -51,19 +51,19 @@
     .btn-perg{
         position: absolute;
         top: 320px;
-        left: 30px;
+        left: 25px;
     }
 
     .btn-save{
         position: absolute;
         top: 320px;
-        left: 30px;
+        left: 20px;
     }
 
     .container-option{
         position: absolute;
-        top: 240px;
-        left: 30px;
+        top: 250px;
+        left: 25px;
         font-size: 17px;
     }
 
