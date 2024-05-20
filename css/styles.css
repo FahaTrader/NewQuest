@@ -172,7 +172,7 @@ input:valid ~ label {
 }
   
 .type1::after {
-    content: "Thanks";
+    content: "Prontinho";
     height: 50px;
     width: 220px;
     background-color: #008080;
@@ -190,7 +190,7 @@ input:valid ~ label {
 }
   
 .type1::before {
-    content: "Hover Me";
+    content: "Salvar";
     height: 50px;
     width: 150px;
     background-color: #fff;
