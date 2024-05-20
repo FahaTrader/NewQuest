@@ -163,7 +163,7 @@ input:valid ~ label {
     border-radius: 10px;
     cursor: pointer;
     position: relative;
-    margin-left: 12px;
+    margin-left: 10px;
     overflow: hidden;
     transition: all 0.5s ease-in-out;
 }
