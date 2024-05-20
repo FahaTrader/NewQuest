@@ -34,10 +34,17 @@
         max-width: 310px;
     }
 
-    .btn-cont{
-        position: absolute;
-        top: 320px;
-        left: 30px;
+    .cssbuttons-io-button{
+        position: relative;
+        top: -0.3em;
+        height: 1.8em;
+        left: 1.5em;
+        font-weight: 500;
+        font-size: 16px;
+    }
+
+    .cssbuttons-io-button .icon{
+        height: 1.4em;
     }
 
     .btn-perg{
