@@ -146,7 +146,7 @@ input:valid ~ label {
 
 .btn-perg{
     position: absolute;
-    top: 350px;
+    top: 335px;
     left: 32px;
 }
 
@@ -232,7 +232,7 @@ input:valid ~ label {
 
 .container-option{
     position: absolute;
-    top: 270px;
+    top: 255px;
     left: 32px;
     font-size: 20px;
 }
