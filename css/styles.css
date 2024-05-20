@@ -158,7 +158,7 @@ input:valid ~ label {
 
 .button {
     height: 50px;
-    width: 280px;
+    width: 300px;
     border: none;
     border-radius: 10px;
     cursor: pointer;
@@ -174,7 +174,7 @@ input:valid ~ label {
 .type1::after {
     content: "Prontinho";
     height: 50px;
-    width: 280px;
+    width: 300px;
     background-color: #008080;
     color: #fff;
     position: absolute;
@@ -192,7 +192,7 @@ input:valid ~ label {
 .type1::before {
     content: "Salvar";
     height: 50px;
-    width: 280px;
+    width: 300px;
     background-color: #fff;
     color: #008080;
     position: absolute;
