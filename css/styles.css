@@ -152,7 +152,7 @@ input:valid ~ label {
 
 .btn-save{
     position: absolute;
-    top: 300px;
+    top: 220px;
     left: 32px;
 }
 
@@ -224,8 +224,8 @@ input:valid ~ label {
 #question-container p{
     position: absolute;
     top: 125px;
-    left: 35px;
-    font-size: 20px;
+    left: 32px;
+    font-size: 19px;
     max-width: 400px;
     color: #FFF:
 }
