@@ -240,7 +240,6 @@ function salvarResultadosNaPlanilha() {
         "NOME": nome,
         "WHATSAPP": whatsapp,
         "NASCIMENTO": nascimento,
-        "Resultado Principal": respostasSim > respostasNao ? 'Problema paterno' : 'Problema materno'
     };
     gruposPerguntas.forEach((grupo, index) => {
         data[grupo.title] = `Sim: ${resultados[index].sim}, Não: ${resultados[index].nao}`;
